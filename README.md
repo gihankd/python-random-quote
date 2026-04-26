@@ -15,3 +15,22 @@ When complete, you'll be able to grab random quotes from the command line, like 
 ## Start the Tutorial
 
 You can find your next step in [this repo's issues](../../issues/)!
+
+## Staff Cost Modelling Scenario Tool
+
+This repo now includes a Streamlit scenario modeller to test vacancy start dates and compare spend variance against budget.
+
+### Run it locally
+
+```bash
+pip install streamlit pandas
+streamlit run staff_cost_model.py
+```
+
+### What it does
+
+- Define a budget period and budget amount.
+- Add/edit vacancies with salary, on-cost rate, and two dates:
+  - **Budgeted Start** (baseline)
+  - **Scenario Start** (what-if)
+- See total vacancy costs and variance versus budget instantly.
